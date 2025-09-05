@@ -2,7 +2,7 @@ This is a template repository used in the [Get Started with HCP Terraform tutori
 
 This repository contains the following files:
 
-- `terraform.tf`: Configures Terraform and the AWS provider.
-- `main.tf`: Defines one AWS EC2 instance.
+- `terraform.tf`: Configures Terraform and the Google provider.
+- `main.tf`: Defines one GCS compute engine instance.
 - `variables.tf`: Defines two variables named `instance_name` and `instance_type`, both with default values.
-- `outputs.tf`: Defines one output named `instance_hostname`.
+- `outputs.tf`: Defines three outputs named `instance_url`, `instance_ip` and `instance_id`.
