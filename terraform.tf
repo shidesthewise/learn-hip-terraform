@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "google" {
-  project = "scheideemantlee-sandbox"
+  project = "scheidemantlee-sandbox"
   region  = "us-west4"
 }
