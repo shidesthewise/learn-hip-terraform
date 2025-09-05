@@ -1,10 +1,13 @@
 terraform {
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.92"
+    google = {
+      source  = "hashicorp/google"
+      version = "4.23.0"
     }
   }
+}
 
-  required_version = ">= 1.2"
+provider "google" {
+  project = scheideemantlee-sandbox
+  region  = "us-west4"
 }
