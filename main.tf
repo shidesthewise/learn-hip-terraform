@@ -9,6 +9,11 @@ resource "google_compute_instance" "default" {
     }
   }
   network_interface {
-    network = "default"
+    network = "google_compute_network.vpc_network.id"
   }
+}
+
+resource "google_compute_network" "vpc_network" {
+  name                    = "terraform-network"
+  auto_create_subnetworks = "true"
 }
