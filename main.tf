@@ -9,7 +9,7 @@ resource "google_compute_instance" "default" {
     }
   }
   network_interface {
-    network = "google_compute_network.vpc_network.id"
+    network = google_compute_network.vpc_network.id
   }
 }
 
