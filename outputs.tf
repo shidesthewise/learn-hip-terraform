@@ -1,12 +1,11 @@
-output "instance_hostname" {
-  description = "Private DNS name of the EC2 instance."
-  value       = aws_instance.app_server.private_dns
+output "instance_url" {
+  value = google_compute_engine.default.self_link
 }
 
-output "instance_security_group_ids" {
-  value = aws_instance.app_server.vpc_security_group_ids
+output "instance_id" {
+  value = google_compute_engine.default.instance_id
 }
 
-output "instance_subnet" {
-  value = aws_instance.app_server.subnet_id
+output "instance_ip" {
+  value = google_compute_engine.default.network_interface.0.network_ip
 }
